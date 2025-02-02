@@ -29,6 +29,6 @@ These are the steps to create a tool to monitor attacks.
 
 <div>
 <a href="https://postimg.cc/ZBDjpV1D"> 
-</a>
     <p>We need to choose Elastic for Security as we're using it for security purposes.</p>
+</a>
 </div>
