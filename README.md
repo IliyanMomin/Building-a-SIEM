@@ -17,7 +17,7 @@ We will build a SIEM system using Elastic Security, focusing on real-time threat
 
 These are the steps to create a tool to monitor attacks.
 
-### 1.Making an Account on Elastic
+### 1.Setting up our SIEM
 <p>
     We will need to first create an account on Elastic.co
 </p>
@@ -32,3 +32,77 @@ These are the steps to create a tool to monitor attacks.
     <p>We need to choose Elastic for Security as we're using it for security purposes.</p>
 </a>
 </div>
+
+<p>The provider will be AWS as we cannot pick another one.</p>
+
+### 2.Exploring the Elastic SIEM
+<div>
+<a href="https://postimg.cc/nCQTQ8py"> 
+    <p>Our SIEM is now successfully created!</p>
+</a>
+</div>
+
+<p>We can use dashboards to see alerts when the logs are ingested.</p>
+
+<p>There will be a rules tab to detect malicious activity.</p>
+
+<div>
+<a href="https://postimg.cc/pyxtCt0t"> 
+    <p>These are the rules</p>
+</a>
+</div>
+
+<p>There's a query that looks for that particular entry in the log.</p>
+
+<div>
+<a href="https://postimg.cc/fk2DRrKn"> 
+    <p>Anything that is detected will be shown here.</p>
+</a>
+</div>
+
+<p>You can explore the rest on your own.</p>
+
+### 3.Installing the Agents
+<p>Let's now ingest data into the Elastic SIEM. This will help us generate alerts and detect suspicious activity.</p>
+
+<p>But before we start we must install our Windows Virtual Machine.</p>
+
+<a href="https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise" target="_blank">
+    <img src="https://img.shields.io/badge/Download-Windows%2010%20Enterprise-blue?logo=windows&logoColor=white" alt="Download Windows 10 Enterprise" />
+</a>
+
+<p>You can use VMware or VirtualBox to set up Windows 10.</p>
+
+<p>Make sure you set the machine up.</p>
+
+<div>
+<a href="https://postimg.cc/PNLhbtfq"> 
+    <p>The Virtual Machine will look like this.</p>
+</a>
+</div>
+
+<p>We can add our agent on fleet page of the assets tab.</p>
+
+<div>
+<a href="https://postimg.cc/BXWTz48M"> 
+    <p>This is the fleet tab to add our agent.</p>
+</a>
+</div>
+
+<div>
+    <a href="https://postimg.cc/r0nmDKwG"> 
+    <p>We will add our agent by copying and pasting the code to the Windows VM.</p>
+</div>
+
+<p>Now we are in the VM we need to add a command before pasting the code.</p>
+
+<p>Make sure to open Windows Powershell and run it as an Administrator.</p>
+
+<div>
+    <a href="https://postimg.cc/pp3XgmT4"> 
+    <p>Set-ExecutionPolicy RemoteSigned -Scope Process</p>
+</div>
+
+<p>This command allows powershell to run locally created scripts without any signature. The -Scope Process makes sure this change applies only to the current session and resets once the powershell is closed. This is great as it helps us run scripts safely without permanantly modifying system-wide execution policies.</p>
+
+
