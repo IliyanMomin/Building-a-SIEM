@@ -65,13 +65,13 @@ These are the steps to create a tool to monitor attacks.
 ### 3.Installing the Agents
 <p>Let's now ingest data into the Elastic SIEM. This will help us generate alerts and detect suspicious activity.</p>
 
-<p>But before we start we must install our Windows Virtual Machine.</p>
+<p>But before we start we must install our Windows 11 Virtual Machine.</p>
 
-<a href="https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise" target="_blank">
-    <img src="https://img.shields.io/badge/Download-Windows%2010%20Enterprise-blue?logo=windows&logoColor=white" alt="Download Windows 10 Enterprise" />
+<a href="https://www.microsoft.com/en-us/evalcenter/download-windows-11-enterprise" target="_blank">
+    <img src="https://img.shields.io/badge/Download-Windows%2010%20Enterprise-blue?logo=windows&logoColor=white" alt="Download Windows 11 Enterprise" />
 </a>
 
-<p>You can use VMware or VirtualBox to set up Windows 10.</p>
+<p>You can use VMware or VirtualBox to set up Windows 11.</p>
 
 <p>Make sure you set the machine up.</p>
 
