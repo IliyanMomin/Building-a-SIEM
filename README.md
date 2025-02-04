@@ -4,14 +4,21 @@
 
 We will build a SIEM system using Elastic Security, focusing on real-time threat detection and malware analysis. This involves setting up the Elastic Stack (Elasticsearch, Kibana, and optional Logstash) and deploying Elastic Agents on endpoints to collect security logs. We will configure detection rules to identify malware and suspicious activity, using Kibana dashboards for monitoring and analysis. To ensure effectiveness, we will simulate attacks and refine detection rules for accuracy. The goal is to create a proactive security monitoring solution that enhances threat detection and response capabilities.
 
-### Skills Learned
+### **Skills Learned**  
+- Configuring and managing **Elastic Security SIEM** for real-time threat detection.  
+- Deploying and managing **Elastic Agents** to collect and analyze security logs.  
+- Writing and tuning **detection rules** to identify malware and suspicious activities.  
+- Using **Kibana dashboards** for security monitoring and visualization.  
+- Simulating **malware attacks** and refining threat detection strategies.  
 
-- Skill 1
-- Skill 2
+### **Tools Used**  
+- **Elastic Stack (Elasticsearch, Kibana, Logstash)** – Set up and configured the SIEM environment for log collection and security analysis.  
+- **Elastic Agent** – Installed and deployed on endpoints to collect system logs and detect threats.  
+- **Kibana** – Used to visualize data, analyze security logs, and monitor system activity.  
+- **Detection Rules & Machine Learning Jobs** – Implemented to automatically identify malware and suspicious behavior.  
+- **Windows Event Logs** – Integrated into Elastic Security for host-based monitoring.  
 
-### Tools Used
-
-- List the tools and what you did with it.
+Let me know if you'd like to refine this further! 🚀
 
 ## Steps
 
@@ -130,4 +137,47 @@ These are the steps to create a tool to monitor attacks.
 
 <p>We will now make the integrations adding to the agent so it can make detections. These can be found on the assets tab.</p>
 
+<div>
+    <a href="https://postimg.cc/bDQLrFFZ"> 
+    <p>The integration we will be adding.</p>
+</div>
+
+<p>Setting the integration is easy you just need to add it into the Agent Policy.</p>
+
+<div>
+    <a href="https://postimg.cc/SYWgJQDF"> 
+    <p>The integration we will be adding.</p>
+</div>
+
+<p>You just need to add the Windows log and the system logs now.</p>
+
+<div>
+    <a href="https://postimg.cc/tYLpPBqX"> 
+    <p>The dashboards now.</p>
+</div>
+
+<p>We now see there are results on the dashboards now.</p>
+
+<div>
+    <a href="https://postimg.cc/k2fszp2C"> 
+    <p>The different dashboards you can see.</p>
+</div>
+
+<div>
+    <a href="https://postimg.cc/ZWM70Q4c"> 
+    <p>The new rule we created.</p>
+</div>
+
+<p>We will now go back to our Windows 11 VM and type in more commands.</p>
+
+<div>
+    <a href="https://postimg.cc/nCYK6PXz"> 
+    <p>Set-NetFirewallProfile -All -Enabled True</p>
+</div>
+
+### Conclusion 
+
+<p>We successfully learned how to setup Elastic SIEM. Install agents and learn how the SIEM can generate alerts.</p>
+
+<p>We learned how to blue team engineer the SIEM and how analysts actually get alerts.</p>
 
