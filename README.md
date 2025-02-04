@@ -76,7 +76,7 @@ These are the steps to create a tool to monitor attacks.
 <p>Make sure you set the machine up.</p>
 
 <div>
-<a href="https://postimg.cc/PNLhbtfq"> 
+<a href="https://postimg.cc/rzMB0Zwq"> 
     <p>The Virtual Machine will look like this.</p>
 </a>
 </div>
@@ -99,10 +99,35 @@ These are the steps to create a tool to monitor attacks.
 <p>Make sure to open Windows Powershell and run it as an Administrator.</p>
 
 <div>
-    <a href="https://postimg.cc/pp3XgmT4"> 
+    <a href="https://postimg.cc/dZ9vCgzy"> 
     <p>Set-ExecutionPolicy RemoteSigned -Scope Process</p>
 </div>
 
 <p>This command allows powershell to run locally created scripts without any signature. The -Scope Process makes sure this change applies only to the current session and resets once the powershell is closed. This is great as it helps us run scripts safely without permanantly modifying system-wide execution policies.</p>
+
+<p> we need to now copy and paste the code to the powershell.</p>
+
+<div>
+    <a href="https://postimg.cc/vDDRmDzG"> 
+    <p>The code we found when creating the fleet.</p>
+</div>
+
+<p>You just need the message saying the Elastic Agent has been installed successfully.</p>
+
+<div>
+    <a href="https://postimg.cc/Yv8K9FJq"> 
+    <p>This is the message you'll get when you finished installing the Elastic Agent when creating the fleet.</p>
+</div>
+
+<div>
+    <a href="https://postimg.cc/68HZhHks"> 
+    <p>The fleet overview confirming it's installed.</p>
+</div>
+
+<p>Now that we successfully made our agent. Lets move onto the integrations side.</p>
+
+### 4.Setting up the integrations
+
+<p>We will now make the integrations adding to the agent so it can make detections. These can be found on the assets tab.</p>
 
 
