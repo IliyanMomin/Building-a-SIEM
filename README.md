@@ -18,7 +18,6 @@ We will build a SIEM system using Elastic Security, focusing on real-time threat
 - **Detection Rules & Machine Learning Jobs** – Implemented to automatically identify malware and suspicious behavior.  
 - **Windows Event Logs** – Integrated into Elastic Security for host-based monitoring.  
 
-Let me know if you'd like to refine this further! 🚀
 
 ## Steps
 
